@@ -1,0 +1,106 @@
+.app {
+  
+ width: 100vw;
+  margin: 40px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* add this line */
+}
+
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header p {
+  text-align: left;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.buttonGroup{
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 1rem;
+  /* outline: 1px solid white; */
+}
+
+.buttonGroup:after{
+content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  outline: 1px solid #348fc7;
+  
+}
+.button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0.25rem;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.button.active {
+  background-color: #666;
+}
+
+.card {
+  background-color: #343434;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  text-align: left;
+  border-radius: 1rem;
+}
+
+.card--variant1 {
+  border-color: #f44336; /* red */
+  box-shadow: 0 0 10px rgba(244, 67, 54, 0.5); /* red shadow */
+}
+
+.card--variant2 {
+  border-color: #34c759; /* green */
+  box-shadow: 0 0 10px rgba(52, 199, 89, 0.5); /* green shadow */
+}
+
+.card--variant3 {
+  border-color: #348fc7; /* blue */
+  box-shadow: 0 0 10px rgba(52, 143, 199, 0.5); /* blue shadow */
+}
+
+.button--error {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.button--success {
+  background-color: #34c759;
+  color: #fff;
+}
+
+.button--info {
+  background-color: rgb(52, 143, 199);
+  color: #fff;
+}
